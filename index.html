@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="flex-container">
+          <h2 class ="title">ROCK  PAPPER  SCISSORS</h2>
+          <div class="game-move">
+            <div class="player-move">
+              <p style="color: whitesmoke;">Player</p>
+              <div class="player-emoji">
+                
+              </div>
+            </div>
+            <div class="computer-move">
+               <p style="color: whitesmoke;">Computer</p>
+              <div class="computer-emoji">
+                
+              </div>
+            </div>
+          </div>
+          <div class = "reset-btn">
+            <button onclick="reSet();" id="reset-button">Reset</button>
+          </div>
+          <div class="score-section">
+            <div class="result" style="color: whitesmoke;"></div>
+            <div class="you" style="color: whitesmoke;"></div>
+            <div class="computer" style="color: whitesmoke;"></div>
+          </div>
+          <div><h3 style="color: whitesmoke;">Select Your Move:</h3></div>
+          <div class="flex-btn">
+            
+            
+          <button onclick="playGame('✊'); updatePlayerMove('✊');" class='btn'>✊</button>
+          <button onclick="playGame('🖐'); updatePlayerMove('🖐');" class='btn'>🖐</button>
+          <button onclick="playGame('✌'); updatePlayerMove('✌');" class='btn'>✌</button>
+          </div>
+        </div>   
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
